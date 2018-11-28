@@ -1,0 +1,15 @@
+<h1> PEOPLE COMPONENT </h1>
+<hr>
+<button
+  class="btn btn-primary"
+  (click)="toggle()"
+> BUTTON</button>
+<p>{{ buttonPressed }}</p>
+
+<input
+  type="text"
+  [(ngModel)]="inputMessage">
+
+<p>{{ inputMessage }} </p>
+
+<app-bikes *ngFor="let bike of bikes"></app-bikes>
